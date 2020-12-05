@@ -1,0 +1,76 @@
+.general-settings
+{
+    direction: rtl;
+    font-family: 'B Nazanin'; 
+}
+.flex-flow
+{
+    display: flex;
+}
+
+body
+{
+    margin: 0px
+}
+
+.main-header
+{
+    height: 80px;
+}
+
+.header-container
+{
+    height: 80px;
+    width: 80%;
+    margin: auto;
+}
+
+.logo-container, .login-search
+{
+    width: 14%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menu
+{
+    width: 72%;
+}
+.menu-item
+{
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: auto;
+    font-size: 120%;
+}
+.menu-icon
+{
+    margin-left: 5px
+}
+.dr-link, .menu-link
+{
+    display: flex;
+    text-decoration: none;
+    color: #3b4157;
+}
+.dr-link:hover, .menu-link:hover
+{
+    color: #fb815e;
+}
+.dr-content
+{
+    top: 78px;
+    right: 25%;
+    width: 50%;
+    height: 500px;
+    display: none;
+    position: absolute;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgb(237, 237, 237);
+    background-color: rgb(255, 255, 255);
+}
+.dr:hover > .dr-content
+{
+    display: block;
+}
