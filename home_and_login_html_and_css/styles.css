@@ -15,6 +15,7 @@ body
 
 .main-header
 {
+    background-color: rgb(250, 250, 250);
     height: 80px;
 }
 
@@ -73,6 +74,35 @@ body
 .dr:hover > .dr-content
 {
     display: block;
+}
+
+.login-box
+{
+    margin-top: 40px;
+    margin-bottom: auto;
+}
+#login-button
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(23, 128, 223);
+    font-family: 'B Nazanin';
+    font-size: 120%;
+    font-weight: 900;
+    background-color: rgb(237, 237, 237);
+}
+#login-button:hover
+{
+    color: #fb815e;
+}
+.login-icon
+{
+    transform: scaleX(-1);
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .main-content
