@@ -6,6 +6,7 @@ function showShips(resp)
     ships = resp.results
 
     content = document.getElementById('starships')
+    content.innerHTML = '<h2>Starships</h2>'
     ul = document.createElement('ul')
     for (let i = 0 ; i < ships.length ; i++)
     {
@@ -24,13 +25,15 @@ function showShips(resp)
 
     prev = document.createElement('button')
     prev.innerHTML = 'Prev'
-    prev.disabled = resp.prev == null
+    prev.disabled = resp.previous == null
     prev.classList.add('prev')
+    prev.onclick = () => send_request(resp.previous, showShips)
 
     next = document.createElement('button')
     next.innerHTML = 'Next'
     next.disabled = resp.next == null
     next.classList.add('next')
+    next.onclick = () => send_request(resp.next, showShips)
 
     content.appendChild(prev)
     content.appendChild(next)

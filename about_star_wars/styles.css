@@ -25,6 +25,11 @@ button /* general settings for buttons */
     margin: 4px;
     cursor: pointer;
 }
+button[disabled] /* style of button when it's disabled */
+{
+    background-color: rgb(208, 208, 208) !important;
+    cursor: default;
+}
 .next /* settings for next button */
 {
     background-color: #00bb00;
