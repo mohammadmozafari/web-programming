@@ -70,7 +70,7 @@ function getShip(event, ship)
     details.appendChild(ul)
 
     li1 = document.createElement('li')
-    li1.innerHTML = '<strong>name:</strong> ' + ship.name
+    li1.innerHTML = '<strong>model:</strong> ' + ship.model
     ul.appendChild(li1)
 
     li2 = document.createElement('li')
