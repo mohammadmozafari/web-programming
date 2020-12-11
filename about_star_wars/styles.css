@@ -1,0 +1,43 @@
+body /* set background image of the page in middle */
+{
+    background-image: url('./images/img2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* next two blocks define the style of links */
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+a:hover
+{
+    color: rgb(198, 238, 133);
+}
+
+#main-content /* the box that holds the main content */
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    opacity: 70%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+/* next two blocks are defined to put starships and details boxes next to each other */
+#starships
+{
+    float: left;
+    margin-right: 10px;
+    /* background-color: rgb(177, 106, 106); */
+}
+#details
+{
+    float: left;
+    /* background-color: rgb(42, 162, 176); */
+}
