@@ -2,13 +2,13 @@
     <head>
         <title>About Star Wars</title>
         <style>
-            body
+            body /* set background image of the page in middle */
             {
                 background-image: url('./images/img2.jpg');
                 background-size: cover;
                 background-position: center center;
             }
-            .main-content
+            #main-content /* the box that holds the main content */
             {
                 position: absolute;
                 top: 50%;
@@ -22,10 +22,50 @@
         </style>
     </head>
     <body>
-        <div class='main-content'>
-            Hello World <br />
-            This is a sample test <br />
-            to test this box
+        <div id='main-content'>
+            <div id='starships'></div>
+            <div id="details"></div>
         </div>
+
+        <script>
+
+            /*
+            This function gets a list of starships and shows the list in html page
+            */
+            function showShips(resp)
+            {
+                ships = resp.results
+
+                content = document.getElementById('main-content')
+                ul = document.createElement('ul')
+                for (let i = 0 ; i < ships.length ; i++)
+                {
+                    li = document.createElement('li')
+                    a = document.createElement('a')
+                    title = document.createTextNode(ships[i].name)
+                    
+                    a.href = ships[i].url
+
+                    a.appendChild(title)
+                    li.appendChild(a)
+                    ul.appendChild(li)
+                }
+                content.appendChild(ul)
+            }
+
+            function getShips()
+            {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        showShips(JSON.parse(this.response))
+                    }
+                };
+                xhttp.open("GET", "https://swapi.dev/api/starships", true);
+                xhttp.send();
+            }
+
+            getShips()
+        </script>
     </body>
 </html>
