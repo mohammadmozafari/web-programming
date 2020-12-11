@@ -426,3 +426,78 @@ body
 {
     margin-top: 10px;
 }
+
+/* special services */
+.special-services
+{
+    background-image: url('./images/special-services/75bb3ac.png');
+    background-size: cover;
+    padding-top: 20px;
+}
+
+.special-services h1
+{
+    text-align: center;
+    color: #fff;
+}
+.special-services > div
+{
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+.item
+{
+    margin: 10px;
+    padding-top: 20px;
+    width: 50%;
+}
+.white-box
+{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+.item > .title
+{
+    padding-top: 20px;
+    font-size: 130%;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+}
+.item > p
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    color: #fff;
+}
+.covid-button
+{
+    outline: none;
+    border: none;
+    background-color: #fb815e;
+    cursor: pointer;
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+.covid-button > div
+{
+    display: flex;
+    font-size: 120%;
+    width: fit-content;
+    margin: auto;
+}
+.covid-button:hover
+{
+    background-color: #fa6439;
+}
