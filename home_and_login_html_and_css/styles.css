@@ -2,16 +2,19 @@
 {
     direction: rtl;
     font-family: 'Shabnam', 'B Nazanin'; 
-    font-size: 98%;
 }
+body, a, div, button
+{
+    font-size: 97%;
+}
+body
+{
+    margin: 0px;
+}
+
 .flex-flow
 {
     display: flex;
-}
-
-body
-{
-    margin: 0px
 }
 
 .main-header
@@ -180,5 +183,77 @@ body
 .main-content
 {
     height: 100%;
+    padding-top: 20px;
     background-color: rgb(250, 250, 250);
+}
+
+/* search box */
+.search-box
+{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    height: 242px;
+    border-radius: 10px;
+    background-size: cover;
+    background-image: url('./images/search-bar/5ef8034.png');
+    background-color: #1780df;
+}
+.search-title
+{
+    color: #fff;
+    text-align: center;
+    font-size: 300%;
+}
+.search-bar
+{
+    display: flex;
+    width: 60%;
+    height: 60px;
+    margin: auto;
+    margin-top: 60px;
+}
+.sb-text
+{
+    width: 60%;
+    outline: none;
+    padding-right: 20px;
+    color: rgb(212, 215, 217);
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.sb-city
+{
+    width: 20%;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+.sb-city-1, .sb-city-2, .sb-city-3
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.sb-city-1
+{
+    padding-right: 10px;
+    border-right: 1px #000 solid;
+}
+.sb-city-2
+{
+    margin-top: auto;   
+    width: 70%;
+    margin-right: 10px;
+}
+.sb-btn
+{
+    width: 20%;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #fb815e;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
 }
