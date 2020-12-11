@@ -22,22 +22,21 @@ a:hover
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: auto;
+    width: max-content;
     opacity: 70%;
     padding: 50px;
-    transform: translate(-50%, -50%);
+    border-radius: 10px;
     background-color: #fff;
+    transform: translate(-50%, -50%);
 }
 
 /* next two blocks are defined to put starships and details boxes next to each other */
 #starships
 {
     float: left;
-    margin-right: 10px;
-    /* background-color: rgb(177, 106, 106); */
+    margin-right: 30px;
 }
 #details
 {
     float: left;
-    /* background-color: rgb(42, 162, 176); */
 }

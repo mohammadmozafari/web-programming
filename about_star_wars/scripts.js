@@ -23,18 +23,22 @@ function showShips(resp)
     content.appendChild(ul)
 }
 
-function getShips()
+/*
+This function sends a get resquest and returns calls the given function on the result
+*/
+function send_request(url, callback)
 {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            showShips(JSON.parse(this.response))
+            callback(JSON.parse(this.response))
         }
     };
-    xhttp.open("GET", "https://swapi.dev/api/starships", true);
+    xhttp.open("GET", url, true);
     xhttp.send();
 }
 
+/* Gets the details of one particular ships and shows it in main panel */
 function getShip(event, ship)
 {
     event.preventDefault()
@@ -64,6 +68,29 @@ function getShip(event, ship)
     li4 = document.createElement('li')
     li4.innerHTML = '<strong>passengers:</strong> ' + ship.passengers
     ul.appendChild(li4)
+
+    li5 = document.createElement('li')
+    li5.innerHTML = '<strong>films:</strong>'
+    ul.appendChild(li5)
+    showFilms(li5, ship.films)
 }
 
-getShips()
+function showFilms(container, films_urls)
+{
+    ol = document.createElement('ol')
+    container.appendChild(ol)
+    for (let i = 0 ; i < films_urls.length ; i++)
+    {
+        send_request(films_urls[i], (obj) => showFilm(ol, obj))
+    }
+}
+function showFilm(container, obj)
+{
+    li = document.createElement('li')
+    li.innerHTML = obj.title
+    container.appendChild(li)
+}
+
+
+
+send_request("https://swapi.dev/api/starships", showShips)
