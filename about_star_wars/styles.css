@@ -17,6 +17,33 @@ a:hover
     color: rgb(198, 238, 133);
 }
 
+/* next 5 blocks are related to style of buttons */
+button /* general settings for buttons */
+{
+    border: none;
+    padding: 10px;
+    margin: 4px;
+    cursor: pointer;
+}
+.next /* settings for next button */
+{
+    background-color: #00bb00;
+    color: #fff;
+}
+.next:hover /* settings for next button while on it */
+{
+    background-color: green;
+}
+.prev /* settings for prev button */
+{
+    background-color: red;
+    color: #fff;
+}
+.prev:hover /* settings for prev button while on it */
+{
+    background-color: #990000;
+}
+
 #main-content /* the box that holds the main content */
 {
     position: absolute;

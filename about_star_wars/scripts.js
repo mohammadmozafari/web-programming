@@ -21,6 +21,19 @@ function showShips(resp)
         ul.appendChild(li)
     }
     content.appendChild(ul)
+
+    prev = document.createElement('button')
+    prev.innerHTML = 'Prev'
+    prev.disabled = resp.prev == null
+    prev.classList.add('prev')
+
+    next = document.createElement('button')
+    next.innerHTML = 'Next'
+    next.disabled = resp.next == null
+    next.classList.add('next')
+
+    content.appendChild(prev)
+    content.appendChild(next)
 }
 
 /*
