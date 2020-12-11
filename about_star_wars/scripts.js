@@ -1,5 +1,6 @@
 /*
-This function gets a list of starships and shows the list in html page
+This function gets a list of starships and shows the list in html page.
+It also implements pagination functionality based on the number of items.
 */
 function showShips(resp)
 {
@@ -40,7 +41,7 @@ function showShips(resp)
 }
 
 /*
-This function sends a get resquest and returns calls the given function on the result
+This function sends a get resquest and calls the given function on the result
 */
 function send_request(url, callback)
 {
@@ -91,6 +92,7 @@ function getShip(event, ship)
     showFilms(li5, ship.films)
 }
 
+/* The next two functions are used for filling the list of films in details section */
 function showFilms(container, films_urls)
 {
     ol = document.createElement('ol')
@@ -106,7 +108,5 @@ function showFilm(container, obj)
     li.innerHTML = obj.title
     container.appendChild(li)
 }
-
-
 
 send_request("https://swapi.dev/api/starships", showShips)
