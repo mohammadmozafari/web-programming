@@ -76,6 +76,7 @@ body
     border-bottom-right-radius: 10px;
     border: 1px solid rgb(237, 237, 237);
     background-color: rgb(255, 255, 255);
+    z-index: 1;
 }
 .dr:hover > .dr-content
 {
@@ -550,11 +551,11 @@ body
 }
 .phone-num
 {
-    width: 80%;
+    width: 90%;
 }
 .phone-num > input
 {
-    width: 70%;
+    width: 65%;
     margin-left: 5px;
     border-radius: 10px;
     border: 1px solid #ced4da;
@@ -567,7 +568,47 @@ body
 {
     border: 1px solid rgb(23, 128, 223);
 }
-.phone-num > button
+.send-link
 {
-    width: 30%;
+    width: 35%;
+    border-radius: 10px;
+    background-color: #fb815e;
+    color: #fff;
+    cursor: pointer;
+}
+.send-link svg
+{
+    width: 15%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.send-link p
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    font-size: 100%;
+}
+.send-link div
+{
+    position: absolute;
+    width: 3.5%;
+    height: 50px;
+    background-color: #fff;
+    opacity: 20%;
+    border-radius: 20px 10px 10px 20px;
+}
+@keyframes button-animation {
+    0%   {width: 3.5%; border-radius: 20px 10px 10px 20px;}
+    100% {width: 10%; border-radius: 10px;}
+}
+.send-link:hover > div
+{
+    animation-name: button-animation;
+    animation-duration: 0.5s;
+    width: 10%;
+    border-radius: 10px;
 }
