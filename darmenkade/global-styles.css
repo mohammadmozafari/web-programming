@@ -1,0 +1,40 @@
+/* ----------------------------------------------------------------------- */
+/* next 5 blocks define the style of typical buttons used in this websites */
+.our-btn
+{
+    padding: 5px;
+    height: 40px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #fb815e;
+    cursor: pointer;
+}
+.our-btn:hover
+{
+    background-color: #fa6439;
+}
+.our-btn > .our-btn-icon
+{
+    width: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-btn-icon > svg, .our-btn-icon > img
+{
+    width: 70%;
+    height: auto;
+}
+.our-btn p
+{
+    color: #fff;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-size: 120%;
+}
+
+/* ----------------------------------------------------------------------- */
