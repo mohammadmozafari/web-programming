@@ -1,20 +1,31 @@
 <html>
 
     <head>
-        <link rel="stylesheet" href="./styles.css"/>
         <link rel="stylesheet" href="./global-styles.css">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles.css"/>
     </head>
 
     <body class="general-settings">
 
-        <header class="main-header">
-            <div class="header-container flex-flow">
-                <div class="logo-container">
-                    <a href=""><img src="./images/logo.svg" class="logo"></a>
+        <!-- menu section on the top of the page -->
+        <header id="main-header">
+            <div id="header-container" class="flex-flow">
+                
+                <!-- website logo-->
+                <div id="logo-container">
+                    <a href=""><img src="./images/logo.svg"></a>
                 </div>
-                <div class="menu flex-flow">
+                
+                <!-- menu container -->
+                <div id="menu" class="flex-flow">
+                    
+                    <!-- first menu item and its drop down content -->
                     <div class="menu-item dr">
+
+                        <!-- menu item-->
                         <a href="" class="dr-link">
+                            <!-- menu item icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="menu-icon" data-v-49015c94="">
@@ -22,15 +33,22 @@
                                 <line x1="21" y1="6" x2="3" y2="6" data-v-49015c94=""></line>
                                 <line x1="21" y1="14" x2="3" y2="14" data-v-49015c94=""></line>
                                 <line x1="21" y1="18" x2="3" y2="18" data-v-49015c94=""></line>
-                            </svg>لیست تخصص ها</a>
+                            </svg>
+                            <!-- menu item title-->
+                            لیست تخصص ها
+                        </a>
+
+                        <!-- menu item drop down -->
                         <div class="dr-content">
                             <div class="flex-flow">
-                                <div class="specialty-list">
+
+                                <!-- list of specialties in drop down list -->
+                                <div class="drop-down-list">
                                     <a href="" class="grid-item flex-flow">
-                                    <img src="images/specialties/c825bc8.svg" class="spec-icon" />
-                                    <div class="spec-text">
-                                        گوارش، کبد و آندوسکوپی
-                                    </div>
+                                        <img src="images/specialties/c825bc8.svg" class="spec-icon" />
+                                        <div class="spec-text">
+                                            گوارش، کبد و آندوسکوپی
+                                        </div>
                                     </a>
                                     <a href="" class="grid-item flex-flow">
                                         <img src="images/specialties/d25b940.svg" class="spec-icon" />
@@ -108,6 +126,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- second menu item and its drop down content -->
                     <div class="menu-item dr">
                         <a href="" class="dr-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none"
@@ -120,7 +140,7 @@
                             </svg>مشاوره آنلاین</a>
                         <div class="dr-content">
                             <div class="flex-flow">
-                                <div class="specialty-list">
+                                <div class="drop-down-list">
                                     <a href="" class="grid-item flex-flow">
                                         <img src="images/online-consulting/bbb0bf5.svg" class="spec-icon" />
                                         <div class="spec-text">
@@ -207,6 +227,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- third menu item (no drop down) -->
                     <div class="menu-item">
                         <a href="" class="menu-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none"
@@ -216,6 +238,8 @@
                                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" data-v-49015c94=""></path>
                             </svg>مجله پزشکی</a>
                     </div>
+
+                    <!-- 4th menu item (no drop down) -->
                     <div class="menu-item">
                         <a href="" class="menu-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none"
@@ -227,6 +251,8 @@
                                 <line x1="23" y1="11" x2="17" y2="11" data-v-49015c94=""></line>
                             </svg>عضویت پزشکان</a>
                     </div>
+
+                    <!-- 5th menu item (no drop down) -->
                     <div class="menu-item">
                         <a href="" class="menu-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none"
@@ -240,12 +266,12 @@
                             </svg>کرونا سازمانی</a>
                     </div>
                 </div>
-                <div class="login-box flex-flow">
+                
+                <div id="login-box" class="flex-flow">
                     <a href="" id="login-button" class='flex-flow'>
                         ورود
                         <svg data-v-0fb0a4cb="" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="login-icon">
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path data-v-0fb0a4cb="" d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
                             <polyline data-v-0fb0a4cb="" points="10 17 15 12 10 7"></polyline>
                             <line data-v-0fb0a4cb="" x1="15" y1="12" x2="3" y2="12"></line>
@@ -518,7 +544,8 @@
                             </div>
                         </div>
                     </div>
-
+                    
+                    <!-- images below subscription button -->
                     <div id="footer-contact" class="flex-flow">
                         <div><img src="./images/footer/logo.png"></div>
                         <div><img src="./images/footer/logo (1).png"></div>
@@ -526,10 +553,12 @@
                 </div>
             </div>
 
+            <!-- the lower section of the footer -->
             <div id="footer-bottom">
                 <div id="property-right">تمامی حقوق این سایت برای درمانکده محفوظ است</div>
                 <div class="flex-flow">
                     <div>طراحی شده با</div>
+                    <!-- heart icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-fill-red feather feather-heart"
                         data-v-1c02d2dc="">
