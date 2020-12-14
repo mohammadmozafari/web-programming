@@ -38,3 +38,23 @@
 }
 
 /* ----------------------------------------------------------------------- */
+/* Other styles */
+
+*
+{
+    direction: rtl;
+    font-family: 'Shabnam', 'B Nazanin'; 
+}
+body, a, div, button
+{
+    font-size: 97%;
+}
+body
+{
+    margin: 0px;
+}
+
+.flex-flow
+{
+    display: flex;
+}

@@ -1,12 +1,16 @@
 <html>
 
     <head>
-        <link rel="stylesheet" href="./global-styles.css">
+
+        <!-- css styles are imported in this secion-->
+        <link rel="stylesheet" href="./styles/global-styles.css">
         <link rel="stylesheet" href="./styles/header.css">
         <link rel="stylesheet" href="./styles/main-content.css">
         <link rel="stylesheet" href="./styles/comments.css">
         <link rel="stylesheet" href="./styles/special-services.css">
-        <link rel="stylesheet" href="./styles.css"/>
+        <link rel="stylesheet" href="./styles/app-download.css"/>
+        <link rel="stylesheet" href="./styles/footer.css">
+
     </head>
 
     <body class="general-settings">
@@ -483,11 +487,14 @@
             </div>
         </div>
 
-        <div class="app-download">
+        <!-- app download section -->
+        <div id="app-download">
             <div class="flex-flow">
-                <div class="picture">
+
+                <!-- picture and icons of app download-->
+                <div id="app-download-picture">
                     <img src="./images/application-dl/6177b76.png" />
-                    <div class="store-panel">
+                    <div id="store-panel">
                         <div class="flex-flow">
                             <img src="./images/application-dl/0a657d6.png" />
                             <img src="./images/application-dl/download.png" />
@@ -495,20 +502,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="explanation">
+
+                <!-- description and get link section -->
+                <div id="app-download-description">
+
+                    <!-- text -->
                     <h2>دانلود اپلیکیشن درمانکده</h2>
                     <p>با اپلیکیشن درمانکده با پزشکان و روانشناسان آنلاین مشاوره کنید یا برای ویزیت حضوری آنلاین نوبت بگیرید.</p>
                     <h3>برای دریافت لینک، شماره موبایل خود را وارد کنید</h3>
-                    <div class="phone-num flex-flow">
-                        <input type="text" value="مانند **** *** 0912"/>
-                        <div class="send-link flex-flow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-bc20ae4e="">
-                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" data-v-bc20ae4e=""></rect>
-                                <line x1="12" y1="18" x2="12" y2="18" data-v-bc20ae4e=""></line>
-                            </svg>
-                            <p>ارسال لینک</p>
-                            <div></div>
+
+                    <!-- get link panel -->
+                    <div id="phone-num" class="flex-flow">
+
+                        <input type="text" placeholder="مانند **** *** 0912"/>
+                        
+                        <!-- button -->
+                        <div class="btn-wrapper">
+                            <div class="our-btn">
+                                <div class='our-btn-icon' style="padding-right: 0px !important;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-bc20ae4e="">
+                                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2" data-v-bc20ae4e=""></rect>
+                                        <line x1="12" y1="18" x2="12" y2="18" data-v-bc20ae4e=""></line>
+                                    </svg>
+                                </div>
+                                <p style="margin-left: 10px;">ارسال لینک</p>
+                            </div>
+                            <div style="position: relative;">
+                                <div class='get-link-effect'></div>
+                            </div>
                         </div>
                     </div>
                 </div>
