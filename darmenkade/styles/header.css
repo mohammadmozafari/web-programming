@@ -38,7 +38,7 @@
     display: flex;
     text-decoration: none;
     color: #3b4157;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 .dr-link:hover, .menu-link:hover /* color change when hovering menu items */
 {
