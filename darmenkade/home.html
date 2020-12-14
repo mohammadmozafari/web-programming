@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="./global-styles.css">
         <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/main-content.css">
         <link rel="stylesheet" href="./styles.css"/>
     </head>
 
@@ -281,81 +282,97 @@
             </div>
         </header>
 
-        <div class="main-content">
+        <!-- search box and best specialties panel -->
+        <div id="main-content">
 
-            <div class="search-box">
-                <h1 class="search-title">درمانکده - مشاوره آنلاین و حضوری</h1>
-                <div class="search-bar">
-                    <input type="text" value="نام پزشک، تخصص، یا محله مورد نظر را جستجو کنید" class="sb-text"/>
-                    <div class="sb-city flex-flow">
+            <!-- search box -->
+            <div id="search-box">
+
+                <!-- title of search box -->
+                <h1 id="search-title">درمانکده - مشاوره آنلاین و حضوری</h1>
+
+                <!-- search bar containing text box, city names and search button -->
+                <div id="search-bar">
+
+                    <!-- input box -->
+                    <input type="text" placeholder="نام پزشک، تخصص، یا محله مورد نظر را جستجو کنید"/>
+
+                    <!-- city names-->
+                    <div class="flex-flow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sb-city-1">
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="city-1">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                             <circle cx="12" cy="10" r="3"></circle>
                         </svg>
-                        <div class="sb-city-2">تهران</div>
+                        <div id="city-2">تهران</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="sb-city-3">
+                            id="city-3">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </div>
-                    <button class="sb-btn">جستجو</button>
+
+                    <!-- search button -->
+                    <button id="search-button">جستجو</button>
                 </div>
             </div>
             
-            <div class="best-specialties">
-                <div class="bs-title">
+            <!-- best specialties container -->
+            <div id="best-specialties">
+
+                <!-- best specialties title -->
+                <div id="bs-title">
                     <div class="bs-title-1">بهترین تخصص های درمانکده</div>
                     <div class="bs-title-2 flex-flow">
                         مشاهده همه
                         <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"
-                            data-v-b9c9f9e8="">
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-b9c9f9e8="">
                             <polyline points="15 18 9 12 15 6" data-v-b9c9f9e8=""></polyline>
                         </svg>
                     </div>
                 </div>
-                <div class="bs-list flex-flow">
+
+                <!-- best specialties list of items -->
+                <div id="bs-list" class="flex-flow">
                     <div class='spec-box'>
                         <div class="spec-box-image" style="background-color: rgb(232, 201, 253);">
-                            <img src="./images/best-specs/d3ab6b5.png" class="sb-image"/>
+                            <img src="./images/best-specs/d3ab6b5.png"/>
                         </div>
                         <div class="spec-box-text">ارتوپدی</div>
                     </div>
                     <div class='spec-box'>
                         <div class="spec-box-image" style="background-color: rgb(252, 186, 186);">
-                            <img src="./images/best-specs/850cd3d.png" class="sb-image" />
+                            <img src="./images/best-specs/850cd3d.png"/>
                         </div>
                         <div class="spec-box-text">اورولوژی</div>
                     </div>
                     <div class='spec-box'>
                         <div class="spec-box-image" style="background-color: rgb(179, 232, 202);">
-                            <img src="./images/best-specs/8a932a4.png" class="sb-image" />
+                            <img src="./images/best-specs/8a932a4.png"/>
                         </div>
                         <div class="spec-box-text">پوست و مو</div>
                     </div>
                     <div class='spec-box'>
                         <div class="spec-box-image" style="background-color: rgb(171, 194, 216);">
-                            <img src="./images/best-specs/171ea81.png" class="sb-image" />
+                            <img src="./images/best-specs/171ea81.png"/>
                         </div>
                         <div class="spec-box-text">زنان و زایمان</div>
                     </div>
                     <div class='spec-box'>
                         <div class="spec-box-image" style="background-color: rgb(251, 203, 238);">
-                            <img src="./images/best-specs/f05550d.png" class="sb-image" />
+                            <img src="./images/best-specs/f05550d.png"/>
                         </div>
                         <div class="spec-box-text">داخلی</div>
                     </div>
                     <div class='spec-box'>
                         <div class="spec-box-image" style="background-color: rgb(197, 255, 251);">
-                            <img src="./images/best-specs/e125f7c.png" class="sb-image" />
+                            <img src="./images/best-specs/e125f7c.png"/>
                         </div>
                         <div class="spec-box-text">گوش، حلق و بینی</div>
                     </div>
                     <div class='spec-box'>
                         <div class="spec-box-image" style="background-color: rgb(253, 205, 176);">
-                            <img src="./images/best-specs/838522d.png" class="sb-image" />
+                            <img src="./images/best-specs/838522d.png"/>
                         </div>
                         <div class="spec-box-text">مغز و اعصاب</div>
                     </div>
